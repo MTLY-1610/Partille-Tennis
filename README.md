@@ -1,2 +1,2 @@
 # Partille-Tennis
-a simple mock up to html fictive case study
+a simple "mock up to html" fictive case study
