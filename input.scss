@@ -1,0 +1,266 @@
+body{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    padding: 0;
+}
+.main{
+   
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+/*------------------------------HEADER-----------------------------------------*/
+    .header{
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+
+        .hero{
+            display: flex;
+            background-image: url("pictures/hero.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100vw;
+            height: 85%;
+    
+    
+        }
+        // .sticky {
+        //     position: fixed;
+        //     top: 0;
+        //     width: 100%;
+        //   }
+          
+        //   .sticky +.rubrik-main {
+        //     padding-top: 15%;
+        //   }
+        .navbar{
+            top: 0;
+    
+    position: sticky;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 15%;
+            align-items: center;
+            justify-content: space-between;
+            
+
+
+
+            .logo{
+                display: flex;
+                margin-left: 6rem;
+            }
+
+            .menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: stretch;
+                margin-right: 6rem;
+                font-family: Acumin Pro;
+                font-weight: 700;
+                font-size: 1em;
+                
+
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+                    width: 35rem;
+
+                    li{
+                        display: flex;
+
+                        a{
+                            text-decoration: none;
+                            color:black;
+                        }
+                        a:hover{
+                            color: green;
+                        
+                        }
+                    }
+
+
+                }
+
+            }
+        }
+
+    }
+
+}
+
+
+/*------------------------------RUBRIK-----------------------------------------*/
+.rubrik-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;;
+    align-items: center;
+    margin-top: 2rem;
+    height: 100vh;
+    
+    
+
+    .rubrik-wrapper{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: stretch;
+       height: 50vh;
+       width: 100%;
+   
+       p{
+           display: flex;
+        font-family: Acumin Pro;
+        font-weight: 700;
+        font-size: 2vw;
+        min-width: 1rem;
+        opacity: 1.0;
+    }
+     
+       
+        .rubrik1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("pictures/klub.png");
+            background-position: center;
+            background-size: initial;
+            background-repeat: no-repeat;
+            height: auto;
+            width: 100vw;
+          
+            // margin-bottom: 2rem;
+
+            
+            
+        }
+        .rubrik1:hover{
+            opacity: 0.5;
+            transition: .5s;
+        }
+        .rubrik2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("pictures/kurser.png");
+            background-position: center;
+            background-size: initial;
+            background-repeat: no-repeat;
+            height: auto;
+            width: 100vw;
+         
+            // margin-bottom: 2rem;
+            
+        }
+        .rubrik2:hover{
+            opacity: 0.5;
+            transition: .5s;
+        }
+        .rubrik3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("pictures/senior.png");
+            background-position: center;
+            background-size: initial;
+            background-repeat: no-repeat;
+            height: auto;
+            width: 100vw;
+  
+            // margin-top: 2rem;
+            
+
+            
+        }
+        .rubrik3:hover{
+            opacity: 0.5;
+            transition: .5s;
+        }
+        .rubrik4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("pictures/boka.png");
+            background-position: center;
+            background-size: initial;
+            background-repeat: no-repeat;
+            height: auto;
+            width: 100vw;
+            // margin-top: 2rem;
+            
+        }
+        .rubrik4:hover{
+            opacity: 0.5;
+            transition: .5s;
+        }
+       
+    }
+
+    
+}
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    height: 100vh;
+    font-family: Acumin Pro;
+    font-weight: 700;
+    font-size: 3vw;
+
+    .agenda-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        height: 30%;
+        width: 90vw;
+        color: seagreen;
+        border: 15px SOLID seagreen;
+        padding: 2rem 2rem 2rem 2rem;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+  overflow-x: auto;
+
+        
+        .agenda-header{
+            display: flex;
+            margin-bottom: 1rem;
+            font-size: x-large;
+            
+           
+
+        }
+        .event-wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: .4rem;
+            width: 30%;
+
+            .date-event-wrapper{
+            display: flex;
+            font-size: large;
+                font-weight: 800;
+            }
+            .info-event{
+                display: flex;
+                font-size: medium;
+                font-weight: 200;
+            }
+      
+
+        }
+
+
+    }
+    
+}
