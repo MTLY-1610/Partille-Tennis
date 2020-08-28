@@ -77,7 +77,9 @@ body{
                 font-weight: 700;
                 font-size: 1em;
                 width: 70%;
-
+                nav{
+                    width: 80%;
+                }
                 ul{
                     display: flex;
                     
@@ -397,8 +399,10 @@ body{
              .logobox{
                  display: flex;
                  align-items: center;
-                 justify-content: space-around;
+                 justify-content: flex-end;
                  padding: 2rem;
+                 width: 30%;
+                 min-width: 200px;
 
              }
              img{

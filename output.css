@@ -49,6 +49,8 @@ body {
         font-weight: 700;
         font-size: 1em;
         width: 70%; }
+        .main .header .navbar .menu nav {
+          width: 80%; }
         .main .header .navbar .menu ul {
           display: flex;
           justify-content: space-between;
@@ -264,8 +266,10 @@ body {
       .info-wrapper .footer .footer-content .logobox {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 2rem; }
+        justify-content: flex-end;
+        padding: 2rem;
+        width: 30%;
+        min-width: 200px; }
       .info-wrapper .footer .footer-content img {
         width: 25%;
         min-width: 200px; }
