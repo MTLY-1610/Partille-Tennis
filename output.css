@@ -166,8 +166,8 @@ body {
     align-items: flex-end;
     height: auto;
     width: 80%;
-    color: seagreen;
-    border: 15px SOLID seagreen; }
+    color: #48A535;
+    border: 12px SOLID #48A535; }
     .info-wrapper .agenda-wrapper .card {
       display: flex;
       flex-direction: column;
@@ -209,7 +209,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url("pictures/map.png");
+      background-image: url("pictures/maps.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
