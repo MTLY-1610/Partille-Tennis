@@ -4,17 +4,24 @@ body{
     margin-left: 0px; 
     margin-right: 0px;
     padding: 0;
+    height: auto;
+    width: 100vw;
+
 }
 .main{
    
     display: flex;
     flex-direction: column;
+    justify-items: center;
     height: 100vh;
+
 /*------------------------------HEADER-----------------------------------------*/
     .header{
 
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         height: 100%;
         
 
@@ -24,25 +31,15 @@ body{
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            width: 100vw;
+            width: 100%;
             height: 85%;
     
     
         }
-        // .sticky {
-        //     position: fixed;
-        //     top: 0;
-        //     width: 100%;
-        //   }
-          
-        //   .sticky +.rubrik-main {
-        //     padding-top: 15%;
-        //   }
+       
         .navbar{
-            top: 0;
-    
-    position: sticky;
-            width: 100%;
+            
+            width: 80%;
             display: flex;
             flex-direction: row;
             height: 15%;
@@ -54,24 +51,39 @@ body{
 
             .logo{
                 display: flex;
-                margin-left: 6rem;
+            
+                img{
+                    display: flex;
+                    width: 80%;
+                }
+
+                
+               
             }
+
+            .burger{
+                display: none;
+            }
+            
+              
 
             .menu{
                 display: flex;
                 flex-direction: row;
-                justify-content: stretch;
-                margin-right: 6rem;
+                justify-content: flex-end;
+              
+                
                 font-family: Acumin Pro;
                 font-weight: 700;
                 font-size: 1em;
-                
+                width: 70%;
 
                 ul{
                     display: flex;
+                    
                     justify-content: space-between;
                     list-style: none;
-                    width: 35rem;
+                    width: 100%;
 
                     li{
                         display: flex;
@@ -90,6 +102,15 @@ body{
                 }
 
             }
+            @media screen and (max-width: 1024px) {
+                .burger{
+                    display: flex;
+                    justify-self: flex-end;
+                }
+                nav{
+                    display: none;
+                }
+              }
         }
 
     }
@@ -101,27 +122,31 @@ body{
 .rubrik-main{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;;
-    align-items: center;
+    width: 100%;
     margin-top: 2rem;
-    height: 100vh;
-    
-    
+    justify-content: center;
+    align-items: center;
 
-    .rubrik-wrapper{
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-items: stretch;
-       height: 50vh;
-       width: 100%;
+  
+    
+       .flexbox{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+       height: 100%;
+        width: 80%;
+    
+ 
+           
+       }
+
    
        p{
            display: flex;
         font-family: Acumin Pro;
         font-weight: 700;
-        font-size: 2vw;
-        min-width: 1rem;
+        font-size: 2rem;
         opacity: 1.0;
     }
      
@@ -134,10 +159,12 @@ body{
             background-position: center;
             background-size: initial;
             background-repeat: no-repeat;
-            height: auto;
-            width: 100vw;
+            height: 400px;
+            width: 45%;
+            min-width: 320px;
+            
           
-            // margin-bottom: 2rem;
+            margin-bottom: 2rem;
 
             
             
@@ -154,8 +181,11 @@ body{
             background-position: center;
             background-size: initial;
             background-repeat: no-repeat;
-            height: auto;
-            width: 100vw;
+            height: 400px;
+            width: 45%;
+            min-width: 320px;
+            margin-bottom: 2rem;
+
          
             // margin-bottom: 2rem;
             
@@ -172,8 +202,10 @@ body{
             background-position: center;
             background-size: initial;
             background-repeat: no-repeat;
-            height: auto;
-            width: 100vw;
+            height: 400px;
+            width: 45%;
+            min-width: 320px;
+            margin-bottom: 2rem;
   
             // margin-top: 2rem;
             
@@ -192,46 +224,50 @@ body{
             background-position: center;
             background-size: initial;
             background-repeat: no-repeat;
-            height: auto;
-            width: 100vw;
-            // margin-top: 2rem;
+            height: 400px;
+            width: 45%;
+            min-width: 320px;
+            margin-bottom: 2rem;
             
         }
         .rubrik4:hover{
             opacity: 0.5;
             transition: .5s;
         }
-       
-    }
 
+       
     
 }
+
 .info-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    height: 100vh;
     font-family: Acumin Pro;
     font-weight: 700;
     font-size: 3vw;
+    
 
     .agenda-wrapper{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: flex-end;
-        height: 30%;
-        width: 90vw;
+        height: auto;
+        width: 80%;
         color: seagreen;
         border: 15px SOLID seagreen;
-        padding: 2rem 2rem 2rem 2rem;
-        overflow-x: scroll;
-        flex-wrap: nowrap;
-  overflow-x: auto;
-
         
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            height: 80%;
+            width: 100%;
+            margin-left: 1rem;
+        }
         .agenda-header{
             display: flex;
             margin-bottom: 1rem;
@@ -240,11 +276,18 @@ body{
            
 
         }
-        .event-wrapper{
+        .col{
             display: flex;
             flex-direction: column;
-            margin-bottom: .4rem;
-            width: 30%;
+        }
+        .event-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-flow: row wrap;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            width: 95%;
 
             .date-event-wrapper{
             display: flex;
@@ -262,5 +305,107 @@ body{
 
 
     }
+    .kontakt-wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+       align-items: stretch;
+       height: auto;
+       width: 80%;
+       margin-top: 4rem;
+
+        .map{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("pictures/map.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            height: 300px;
+            width: 45%;
+            min-width: 320px;
+          
+
+        }
+        .kontakt{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("pictures/kontakt.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 45%;
+            min-width: 320px;
+
+        }
     
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        background-color: #EAEEEE;
+        
+        margin-top: 4rem;
+
+        .footer-content{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            
+
+
+            .text-wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 35%;
+                
+                padding: 2rem;
+          
+
+                .adress{
+
+                    display: flex;
+                    font-size: .9rem;
+                    font-weight: 200;
+                    text-decoration: none;
+                    min-width: 8rem;
+                
+                }
+                .tel{
+
+                    display: flex;
+                    font-size: .9rem;
+                    font-weight: 200;
+                    text-decoration: none;
+                    margin-left: 2rem;
+                    min-width: 8rem;
+                
+                }
+             }
+             .logobox{
+                 display: flex;
+                 align-items: center;
+                 justify-content: space-around;
+                 padding: 2rem;
+
+             }
+             img{
+                 width: 25%;
+                 min-width: 200px;
+             }
+            
+        }
+    }
 }
